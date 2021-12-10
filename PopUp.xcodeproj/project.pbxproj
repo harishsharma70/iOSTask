@@ -14,6 +14,8 @@
 		18194B11275E175200F9223A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18194B10275E175200F9223A /* Assets.xcassets */; };
 		18194B14275E175200F9223A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18194B12275E175200F9223A /* LaunchScreen.storyboard */; };
 		18194B42275E2F6600F9223A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18194B41275E2F6600F9223A /* ViewController.swift */; };
+		18594F3A27633DFA005CA19E /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18594F3927633DFA005CA19E /* DesignViewController.swift */; };
+		18594F3C27633FE7005CA19E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18594F3B27633FE7005CA19E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		18194B13275E175200F9223A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18194B15275E175200F9223A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18194B41275E2F6600F9223A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18594F3927633DFA005CA19E /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
+		18594F3B27633FE7005CA19E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				18194B12275E175200F9223A /* LaunchScreen.storyboard */,
 				18194B15275E175200F9223A /* Info.plist */,
 				18194B41275E2F6600F9223A /* ViewController.swift */,
+				18594F3927633DFA005CA19E /* DesignViewController.swift */,
+				18594F3B27633FE7005CA19E /* ProfileViewController.swift */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18594F3C27633FE7005CA19E /* ProfileViewController.swift in Sources */,
 				18194B42275E2F6600F9223A /* ViewController.swift in Sources */,
 				18194B0C275E174F00F9223A /* PopUpViewController.swift in Sources */,
 				18194B08275E174F00F9223A /* AppDelegate.swift in Sources */,
+				18594F3A27633DFA005CA19E /* DesignViewController.swift in Sources */,
 				18194B0A275E174F00F9223A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

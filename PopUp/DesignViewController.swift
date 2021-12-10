@@ -2,28 +2,24 @@
 //  DesignViewController.swift
 //  PopUp
 //
-//  Created by apple on 19/09/1400 AP.
+//  Created by apple on 18/09/1400 AP.
 //
 
 import UIKit
 
 class DesignViewController: UIViewController {
-
+    
+    @IBOutlet weak var captionTxtView: UITextView!
+    @IBOutlet weak var captionView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func postBttnTapped(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func draftBttnTapped(_ sender: UIButton) {
+    }
+    
 }
