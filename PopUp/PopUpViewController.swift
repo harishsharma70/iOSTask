@@ -11,7 +11,7 @@ protocol popUpViewControllerDelegate {
 }
 
 class PopUpViewController: UIViewController {
-   
+    
     @IBOutlet weak var tittleLabel: UILabel!
     @IBOutlet weak var popView: UIView!
     @IBOutlet var visualEffectView: UIView!
