@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lUA-97-olM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Riq-lE-txP">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -75,6 +75,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gcc-CU-aYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3222" y="740"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="cnC-Pe-OWg">
+            <objects>
+                <viewController storyboardIdentifier="EmailViewController" id="Riq-lE-txP" customClass="EmailViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjM-9h-Moe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-Z2-acu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmailTableViewCell" rowHeight="87" id="REu-sX-PVn" customClass="EmailTableViewCell" customModule="PopUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="REu-sX-PVn" id="IMv-g3-zS0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYo-HT-Jbh">
+                                                    <rect key="frame" x="20" y="20" width="50" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Kd2-31-RIj"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornorRadius">
+                                                            <integer key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-3t-8Rd">
+                                                    <rect key="frame" x="90" y="20" width="265" height="47"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTc-x1-Wo2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="265" height="18.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3y-j3-Owa">
+                                                            <rect key="frame" x="0.0" y="28.5" width="265" height="18.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="aYo-HT-Jbh" secondAttribute="bottom" constant="20" id="NDD-M0-nHh"/>
+                                                <constraint firstItem="Hyf-3t-8Rd" firstAttribute="leading" secondItem="aYo-HT-Jbh" secondAttribute="trailing" constant="20" id="ZaT-C6-IcH"/>
+                                                <constraint firstItem="Hyf-3t-8Rd" firstAttribute="bottom" secondItem="aYo-HT-Jbh" secondAttribute="bottom" id="amp-kY-cwJ"/>
+                                                <constraint firstItem="Hyf-3t-8Rd" firstAttribute="top" secondItem="aYo-HT-Jbh" secondAttribute="top" id="ecB-5t-iIf"/>
+                                                <constraint firstItem="aYo-HT-Jbh" firstAttribute="top" secondItem="IMv-g3-zS0" secondAttribute="top" constant="20" id="hLZ-4i-BZQ"/>
+                                                <constraint firstItem="aYo-HT-Jbh" firstAttribute="leading" secondItem="IMv-g3-zS0" secondAttribute="leading" constant="20" id="mR8-TP-7xn"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hyf-3t-8Rd" secondAttribute="trailing" constant="20" id="qdW-94-0Uh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailImgView" destination="aYo-HT-Jbh" id="Vm8-dh-afV"/>
+                                            <outlet property="idLabel" destination="F3y-j3-Owa" id="MYw-K0-DLP"/>
+                                            <outlet property="usernameLabel" destination="zTc-x1-Wo2" id="fCm-04-Prz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Riq-lE-txP" id="837-C5-BKd"/>
+                                    <outlet property="delegate" destination="Riq-lE-txP" id="rwA-zd-HcA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dZ5-fp-Hib"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dZ5-fp-Hib" firstAttribute="trailing" secondItem="ISu-Z2-acu" secondAttribute="trailing" id="0vG-sE-2TS"/>
+                            <constraint firstItem="ISu-Z2-acu" firstAttribute="leading" secondItem="dZ5-fp-Hib" secondAttribute="leading" id="1xg-7E-82r"/>
+                            <constraint firstItem="ISu-Z2-acu" firstAttribute="top" secondItem="dZ5-fp-Hib" secondAttribute="top" id="bd6-FF-8Ig"/>
+                            <constraint firstItem="dZ5-fp-Hib" firstAttribute="bottom" secondItem="ISu-Z2-acu" secondAttribute="bottom" id="n6E-x2-76x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTableView" destination="ISu-Z2-acu" id="DSI-Vq-eKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtT-YP-FP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1490" y="1210"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oAW-EF-1K9">
