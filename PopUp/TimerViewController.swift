@@ -8,7 +8,7 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-
+    
     var currentDate = Date()
     var nextDate = Date()
     
@@ -23,7 +23,7 @@ class TimerViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateSecondCounter), userInfo: nil, repeats: true)
         nextDate =  Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
-
+        
     }
     @objc func updateSecondCounter() {
         
@@ -31,6 +31,6 @@ class TimerViewController: UIViewController {
         hoursLabel.text = calendar.hour?.description
         minuteLabel.text = calendar.minute?.description
         secondLabel.text = calendar.second?.description
-        daysLabel.text = "1"
-}
+        daysLabel.text = calendar.day?.description
+    }
 }
