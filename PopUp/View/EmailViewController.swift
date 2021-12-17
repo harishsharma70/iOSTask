@@ -8,20 +8,26 @@
 import UIKit
 
 class EmailViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTableView: UITableView!
     var viewModelEmail = EmailViewModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModelEmail.getEmailData {
             DispatchQueue.main.async {
                 self.emailTableView.reloadData()
             }
-            
         }
         emailTableView.delegate = self
         emailTableView.dataSource = self
+    }
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
     }
 }
 
@@ -41,7 +47,7 @@ extension EmailViewController: UITableViewDataSource,UITableViewDelegate{
         cell.usernameLabel.text = "\(modelEmail.email)"
         cell.idLabel.text = "\(modelEmail.id)"
         cell.emailImgView.image = Image
-
+        
         
         return cell
     }
@@ -49,6 +55,6 @@ extension EmailViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return 80
-    
+        
     }
 }

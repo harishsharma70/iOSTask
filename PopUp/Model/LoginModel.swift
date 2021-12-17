@@ -40,4 +40,3 @@ struct Support: Codable {
     let url: String
     let text: String
 }
-

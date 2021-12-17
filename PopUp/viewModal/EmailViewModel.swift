@@ -11,6 +11,9 @@ class EmailViewModel {
     
     var arrEmail = [emailDatum]()
     
+    
+ 
+    
     func getEmailData(completionHandler: @escaping () -> Void){
         
         URLSession.shared.dataTask(with: URL(string: "https://reqres.in/api/users?page=2")!) { (data, response, error)

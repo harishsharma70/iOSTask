@@ -8,8 +8,12 @@
 import Foundation
 
 class LogInViewModel {
+
     
     var arrLogin = [LoginModel]()
+    
+ 
+
     
     func getAllLogInData(){
         
@@ -30,8 +34,5 @@ class LogInViewModel {
             }
         }.resume()
         
-        
-        
     }
-
 }

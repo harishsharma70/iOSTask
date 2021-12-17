@@ -14,6 +14,9 @@
 		18194B11275E175200F9223A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18194B10275E175200F9223A /* Assets.xcassets */; };
 		18194B14275E175200F9223A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18194B12275E175200F9223A /* LaunchScreen.storyboard */; };
 		18194B42275E2F6600F9223A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18194B41275E2F6600F9223A /* ViewController.swift */; };
+		183509BD2769B0F000D3AA20 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183509BC2769B0F000D3AA20 /* SignUpModel.swift */; };
+		183509BF2769B18B00D3AA20 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183509BE2769B18B00D3AA20 /* SignUpViewModel.swift */; };
+		183509C12769B3B900D3AA20 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183509C02769B3B900D3AA20 /* SignUpViewController.swift */; };
 		18594F3A27633DFA005CA19E /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18594F3927633DFA005CA19E /* DesignViewController.swift */; };
 		18594F3C27633FE7005CA19E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18594F3B27633FE7005CA19E /* ProfileViewController.swift */; };
 		18594F5027634733005CA19E /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18594F3E27634733005CA19E /* Raleway-BoldItalic.ttf */; };
@@ -54,6 +57,9 @@
 		18194B13275E175200F9223A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18194B15275E175200F9223A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18194B41275E2F6600F9223A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		183509BC2769B0F000D3AA20 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		183509BE2769B18B00D3AA20 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		183509C02769B3B900D3AA20 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18594F3927633DFA005CA19E /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
 		18594F3B27633FE7005CA19E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18594F3E27634733005CA19E /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -114,7 +120,7 @@
 		18194B06275E174F00F9223A /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				18661C4D2767530D00A8B175 /* Modal */,
+				18661C4D2767530D00A8B175 /* Model */,
 				18661C4C276752F800A8B175 /* viewModal */,
 				18661C4B276752F300A8B175 /* View */,
 				18194B07275E174F00F9223A /* AppDelegate.swift */,
@@ -165,6 +171,7 @@
 				18661C4E27675AD600A8B175 /* GetViewController.swift */,
 				186F91952768962600CA6924 /* EmailViewController.swift */,
 				186F91972768972600CA6924 /* EmailTableViewCell.swift */,
+				183509C02769B3B900D3AA20 /* SignUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,17 +181,19 @@
 			children = (
 				186F918F276877E200CA6924 /* LogInViewModel.swift */,
 				186F91932768957C00CA6924 /* EmailViewModel.swift */,
+				183509BE2769B18B00D3AA20 /* SignUpViewModel.swift */,
 			);
 			path = viewModal;
 			sourceTree = "<group>";
 		};
-		18661C4D2767530D00A8B175 /* Modal */ = {
+		18661C4D2767530D00A8B175 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				186F918D27685A4400CA6924 /* LoginModel.swift */,
 				186F91912768939A00CA6924 /* EmailModel.swift */,
+				183509BC2769B0F000D3AA20 /* SignUpModel.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +287,10 @@
 			files = (
 				18594F3C27633FE7005CA19E /* ProfileViewController.swift in Sources */,
 				18661C4F27675AD600A8B175 /* GetViewController.swift in Sources */,
+				183509BF2769B18B00D3AA20 /* SignUpViewModel.swift in Sources */,
 				18194B42275E2F6600F9223A /* ViewController.swift in Sources */,
 				186F9190276877E200CA6924 /* LogInViewModel.swift in Sources */,
+				183509C12769B3B900D3AA20 /* SignUpViewController.swift in Sources */,
 				18194B0C275E174F00F9223A /* PopUpViewController.swift in Sources */,
 				18661C4A27673B1B00A8B175 /* TimerViewController.swift in Sources */,
 				186F91962768962600CA6924 /* EmailViewController.swift in Sources */,
@@ -288,6 +299,7 @@
 				186F91942768957C00CA6924 /* EmailViewModel.swift in Sources */,
 				186F91922768939A00CA6924 /* EmailModel.swift in Sources */,
 				186F918E27685A4500CA6924 /* LoginModel.swift in Sources */,
+				183509BD2769B0F000D3AA20 /* SignUpModel.swift in Sources */,
 				18594F3A27633DFA005CA19E /* DesignViewController.swift in Sources */,
 				18194B0A275E174F00F9223A /* SceneDelegate.swift in Sources */,
 			);
