@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0ri-Ra-EaD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cax-YG-18K">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -542,6 +542,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gb4-So-eWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="454" y="1209"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="myo-21-GKo">
+            <objects>
+                <viewController storyboardIdentifier="CollectionViewController" id="Cax-YG-18K" customClass="CollectionViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xLW-HK-Ui0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-jD-6so">
+                                <rect key="frame" x="0.0" y="50" width="375" height="167"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TG1-xZ-hTz">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cax-YG-18K" id="i57-Ce-WSj"/>
+                                    <outlet property="delegate" destination="Cax-YG-18K" id="Plc-xc-nUD"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHb-dO-N9P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kHb-dO-N9P" firstAttribute="trailing" secondItem="hxp-jD-6so" secondAttribute="trailing" id="XPB-Mf-fhg"/>
+                            <constraint firstItem="kHb-dO-N9P" firstAttribute="bottom" secondItem="hxp-jD-6so" secondAttribute="bottom" constant="450" id="eNn-w4-8u1"/>
+                            <constraint firstItem="hxp-jD-6so" firstAttribute="leading" secondItem="kHb-dO-N9P" secondAttribute="leading" id="rbc-zb-ViO"/>
+                            <constraint firstItem="hxp-jD-6so" firstAttribute="top" secondItem="kHb-dO-N9P" secondAttribute="top" constant="50" id="xJT-13-IDN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gridCollectioView" destination="hxp-jD-6so" id="Uys-07-GxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4m-jj-Hu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="1209"/>
         </scene>
         <!-- -->
         <scene sceneID="92b-Fl-qVL">

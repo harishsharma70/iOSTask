@@ -18,17 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
 
-               self.window = UIWindow(windowScene: windowScene)
-               //self.window =  UIWindow(frame: UIScreen.main.bounds)
-
-               let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let rootVC = storyboard.instantiateViewController(identifier: "EmailViewController") as? EmailViewController else {
-                   print("ViewController not found")
-                   return
-               }
-               let rootNC = UINavigationController(rootViewController: rootVC)
-               self.window?.rootViewController = rootNC
-               self.window?.makeKeyAndVisible()
+//               self.window = UIWindow(windowScene: windowScene)
+//               //self.window =  UIWindow(frame: UIScreen.main.bounds)
+//
+//               let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        guard let rootVC = storyboard.instantiateViewController(identifier: "EmailViewController") as? EmailViewController else {
+//                   print("ViewController not found")
+//                   return
+//               }
+//               let rootNC = UINavigationController(rootViewController: rootVC)
+//               self.window?.rootViewController = rootNC
+//               self.window?.makeKeyAndVisible()
         }
     
 

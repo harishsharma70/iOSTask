@@ -45,6 +45,9 @@
 		186F91942768957C00CA6924 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F91932768957C00CA6924 /* EmailViewModel.swift */; };
 		186F91962768962600CA6924 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F91952768962600CA6924 /* EmailViewController.swift */; };
 		186F91982768972600CA6924 /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F91972768972600CA6924 /* EmailTableViewCell.swift */; };
+		18CE862B277048EA008D0BED /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE862A277048EA008D0BED /* CollectionViewController.swift */; };
+		18CE862E27704D16008D0BED /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE862C27704D16008D0BED /* GridCollectionViewCell.swift */; };
+		18CE862F27704D16008D0BED /* GridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CE862D27704D16008D0BED /* GridCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		186F91932768957C00CA6924 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
 		186F91952768962600CA6924 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		186F91972768972600CA6924 /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		18CE862A277048EA008D0BED /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		18CE862C27704D16008D0BED /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		18CE862D27704D16008D0BED /* GridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,9 @@
 				186F91952768962600CA6924 /* EmailViewController.swift */,
 				186F91972768972600CA6924 /* EmailTableViewCell.swift */,
 				183509C02769B3B900D3AA20 /* SignUpViewController.swift */,
+				18CE862A277048EA008D0BED /* CollectionViewController.swift */,
+				18CE862C27704D16008D0BED /* GridCollectionViewCell.swift */,
+				18CE862D27704D16008D0BED /* GridCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 				18594F5027634733005CA19E /* Raleway-BoldItalic.ttf in Resources */,
 				18594F5327634733005CA19E /* Raleway-ExtraLight.ttf in Resources */,
 				18594F5227634733005CA19E /* Raleway-ThinItalic.ttf in Resources */,
+				18CE862F27704D16008D0BED /* GridCollectionViewCell.xib in Resources */,
 				18594F5D27634733005CA19E /* Raleway-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE862B277048EA008D0BED /* CollectionViewController.swift in Sources */,
 				18594F3C27633FE7005CA19E /* ProfileViewController.swift in Sources */,
 				18661C4F27675AD600A8B175 /* GetViewController.swift in Sources */,
 				183509BF2769B18B00D3AA20 /* SignUpViewModel.swift in Sources */,
@@ -297,6 +308,7 @@
 				18194B08275E174F00F9223A /* AppDelegate.swift in Sources */,
 				186F91982768972600CA6924 /* EmailTableViewCell.swift in Sources */,
 				186F91942768957C00CA6924 /* EmailViewModel.swift in Sources */,
+				18CE862E27704D16008D0BED /* GridCollectionViewCell.swift in Sources */,
 				186F91922768939A00CA6924 /* EmailModel.swift in Sources */,
 				186F918E27685A4500CA6924 /* LoginModel.swift in Sources */,
 				183509BD2769B0F000D3AA20 /* SignUpModel.swift in Sources */,
