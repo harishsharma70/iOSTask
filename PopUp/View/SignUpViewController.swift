@@ -8,17 +8,20 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-    
+
+    //     MARK: - Variable
     var viewModelSignUp = SignUpViewModel()
     
+    //     MARK: - Outlet
     @IBOutlet weak var emailTxtFld: UITextField!
     @IBOutlet weak var passwordTxtFld: UITextField!
     
+    //     MARK: - LifeCycle Of ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
+    //     MARK: - Button Action
     @IBAction func signupBttnTapped(_ sender: UIButton) {
         
         if ((emailTxtFld.text?.isValidEmail) == false){
@@ -45,14 +48,16 @@ class SignUpViewController: UIViewController {
     }
 }
 
+//     MARK: - Extension UserName Validation
 extension String {
     var isValidEmail: Bool {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
 }
+
+//     MARK: - Extension Password Validation
 extension String {
     var isValidPassword : Bool{
-        
         if self.count < 6 || self.count > 8 {
             return false
         }

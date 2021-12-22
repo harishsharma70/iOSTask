@@ -9,9 +9,13 @@ import UIKit
 
 class EmailViewController: UIViewController {
     
-    @IBOutlet weak var emailTableView: UITableView!
+    //     MARK: - Variable
     var viewModelEmail = EmailViewModel()
     
+    //     MARK: - IBOutlet
+    @IBOutlet weak var emailTableView: UITableView!
+    
+    //     MARK: - LifeCycle Of ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModelEmail.getEmailData {
@@ -22,6 +26,8 @@ class EmailViewController: UIViewController {
         emailTableView.delegate = self
         emailTableView.dataSource = self
     }
+    
+    //     MARK: - Button Action
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
@@ -31,6 +37,7 @@ class EmailViewController: UIViewController {
     }
 }
 
+//     MARK: - Extension ViewController
 extension EmailViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,7 +60,6 @@ extension EmailViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 80
         
     }

@@ -9,14 +9,15 @@ import UIKit
 
 class CollectionViewController: UIViewController {
     
-    //     MARK: IB Outlet
+    //     MARK: - IB Outlet
     @IBOutlet weak var gridCollectioView: UICollectionView!
     
-    //         MARK: Variables
+    //         MARK: - Variables
+    
     var viewModelEmail = EmailViewModel()
     let myGroup = DispatchGroup()
     
-    //     MARK: LifeCycle Of ViewController
+    //     MARK: - LifeCycle Of ViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,8 @@ class CollectionViewController: UIViewController {
     }
 }
 
-//     MARK: Extension ViewController
+//     MARK: - Extension ViewController
+
 extension CollectionViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModelEmail.arrEmail.count

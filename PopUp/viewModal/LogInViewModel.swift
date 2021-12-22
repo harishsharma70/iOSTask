@@ -9,12 +9,8 @@ import Foundation
 
 class LogInViewModel {
 
-    
     var arrLogin = [LoginModel]()
-    
- 
 
-    
     func getAllLogInData(){
         
         URLSession.shared.dataTask(with: URL(string: "https://reqres.in/api/login")!) { (data, response, error)
@@ -33,6 +29,5 @@ class LogInViewModel {
                 print(error?.localizedDescription)
             }
         }.resume()
-        
     }
 }
