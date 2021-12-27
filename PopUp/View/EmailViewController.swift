@@ -54,13 +54,10 @@ extension EmailViewController: UITableViewDataSource,UITableViewDelegate{
         cell.usernameLabel.text = "\(modelEmail.email)"
         cell.idLabel.text = "\(modelEmail.id)"
         cell.emailImgView.image = Image
-        
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
-        
     }
 }

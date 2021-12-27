@@ -23,8 +23,6 @@ class CollectionViewCell: UICollectionViewCell {
         mainView.layer.shadowOpacity = 1
         mainView.layer.shadowOffset = CGSize.zero
         mainView.layer.shadowRadius = 5
-//        mainView.layer.masksToBounds = false
-
     }
 
 }
